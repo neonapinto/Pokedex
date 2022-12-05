@@ -1,0 +1,11 @@
+$brand-colors: ("ice",$ice),("grass", $grass),("poison",$poison), ("fire",$fire), ("psychic",$psychic),("flying",$flying),("rock",$rock),
+("water",$water), ("ground",$ground), ("bug",$bug), ("normal",$normal), ("fighting",$fighting), ("ghost",$ghost),("steel", $steel),
+("fairy",$fairy), ("electric",$electric),("dragon",$dragon);
+
+@mixin color-range{
+    @each $color in $brand-colors {
+        &.#{nth($color,1)} {
+          background-color: nth($color,2);
+        }
+      }
+}

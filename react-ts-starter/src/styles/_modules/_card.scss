@@ -1,0 +1,72 @@
+.card{
+    border: 1px solid $steel;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    backdrop-filter: blur(10px);
+    color: $text-color;
+    font-style: italic;
+    gap: 1rem;
+}
+
+.card-images{
+    display: flex;
+    flex-direction: column;
+}
+.card-specs{
+    background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%);
+    border-radius: 5px;
+    padding: 1rem;
+    span{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+.card-content{
+    flex-grow: 1;
+}
+
+.progress-container{
+    p{
+        margin: 0.3rem;
+    }
+}
+
+.progress-bar{
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right, #ffb347 0%, #ffcc33  51%, #ffb347  100%);
+    margin-bottom: 1rem;
+    position: relative;
+
+
+    &-percentage{
+        background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5px;
+    }
+}
+
+.chip-container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+
+    .chip{
+        padding: 0.6rem;
+        background: $steel;
+        border-radius: 5px;
+        width: auto;
+    }
+}
+
+
+                  
+ 
+
+          
+
+ 

@@ -1,0 +1,37 @@
+.user-form-container{
+    padding: 2rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px $steel;
+    border: 1px solid $steel;
+    position: relative;
+    top: 10%;
+    color: $text-color;
+    backdrop-filter: blur(10px);
+
+    h4{
+        margin: 0 0 3rem 0;
+        text-align: center;
+    }
+
+    .user-form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    
+        label{
+           font-family: 'Roboto';
+           font-style: italic;
+           font-size: 0.8rem;
+           padding-left: 0.5rem;
+        }
+    
+        input{
+            padding: 0.5rem;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid $steel;
+            box-shadow: 1px 1px 6px $steel;
+            margin-bottom: 0.7rem;
+        }
+    }
+}

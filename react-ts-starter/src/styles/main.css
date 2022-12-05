@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+.primary-btn {
+  background-image: linear-gradient(to right, #34e89e 0%, #3384a4 51%, #34e89e 100%);
+  margin: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #9eb7b8;
+  color: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+.primary-btn:active {
+  transform: scale(0.9);
+  box-shadow: 2px 2px 5px #34e89e;
+}
+.primary-btn:hover {
+  background-position: right center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-disabled {
+  background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+  cursor: not-allowed;
+}
+
+.buttons-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .buttons-container {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+.splash-bg {
+  background: url(/public/images/splash/bg.png) no-repeat center center fixed;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.splash-btn {
+  background-color: #f3254b;
+  padding: 1rem 3rem;
+  color: #ffffff;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a 51%, #cb2d3e 100%);
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 50px;
+  left: calc(50% - 104px);
+  outline: none;
+  -webkit-animation: crescendo 0.7s alternate infinite ease-in;
+          animation: crescendo 0.7s alternate infinite ease-in;
+}
+
+.splash-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@-webkit-keyframes crescendo {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes crescendo {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.home-container {
+  height: 100%;
+}
+
+.home-header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+.home-header-step {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #f3254b;
+  border-radius: 50%;
+  background-image: url("/public/images/home/pokemon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 48px;
+}
+.home-header-step:hover {
+  transform: scale(1.05);
+}
+.home-header-divider {
+  width: 35%;
+  height: 3px;
+  background-color: #f3254b;
+}
+.home-header-divider-disabled {
+  background-color: #9eb7b8;
+}
+.home-header-animation {
+  -webkit-animation: animate 2s linear;
+          animation: animate 2s linear;
+}
+@media screen and (max-width: 400px) {
+  .home-header {
+    position: relative;
+  }
+}
+
+.home-body {
+  position: relative;
+  top: 100px;
+  height: calc(100% - 150px);
+}
+@media screen and (max-width: 400px) {
+  .home-body {
+    top: 10px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 50%;
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 99%;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    left: 0;
+    background-color: #9eb7b8;
+  }
+  100% {
+    left: 100%;
+    background-color: #f3254b;
+  }
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+    background-color: #9eb7b8;
+  }
+  100% {
+    left: 100%;
+    background-color: #f3254b;
+  }
+}
+.card {
+  border: 1px solid #9eb7b8;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #ffffff;
+  font-style: italic;
+  gap: 1rem;
+}
+
+.card-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-specs {
+  background-image: linear-gradient(to right, #EB3349 0%, #F45C43 51%, #EB3349 100%);
+  border-radius: 5px;
+  padding: 1rem;
+}
+.card-specs span {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.progress-container p {
+  margin: 0.3rem;
+}
+
+.progress-bar {
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(to right, #ffb347 0%, #ffcc33 51%, #ffb347 100%);
+  margin-bottom: 1rem;
+  position: relative;
+}
+.progress-bar-percentage {
+  background-image: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+}
+
+.chip-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.chip-container .chip {
+  padding: 0.6rem;
+  background: #9eb7b8;
+  border-radius: 5px;
+  width: auto;
+}
+
+.user-form-container {
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #9eb7b8;
+  border: 1px solid #9eb7b8;
+  position: relative;
+  top: 10%;
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.user-form-container h4 {
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+.user-form-container .user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.user-form-container .user-form label {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+}
+.user-form-container .user-form input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #9eb7b8;
+  box-shadow: 1px 1px 6px #9eb7b8;
+  margin-bottom: 0.7rem;
+}
+
+.pokedex-search-row {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pokedex-banner {
+  background-color: #ffffff;
+  border: 1px solid #9eb7b8;
+  color: #9eb7b8;
+  font-size: 1.1rem;
+  font-style: italic;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.pokemon-sprite:hover {
+  transform: scale(1.05);
+}
+
+#demo-multiple-chip-label {
+  padding: 0 0.1rem;
+  color: #ffffff;
+}
+#demo-multiple-chip-label.ice {
+  background-color: #7fcdff;
+}
+#demo-multiple-chip-label.grass {
+  background-color: #9bcc50;
+}
+#demo-multiple-chip-label.poison {
+  background-color: #b97fc9;
+}
+#demo-multiple-chip-label.fire {
+  background-color: #fd7d24;
+}
+#demo-multiple-chip-label.psychic {
+  background-color: #f366b9;
+}
+#demo-multiple-chip-label.flying {
+  background-color: #bdb9b8;
+}
+#demo-multiple-chip-label.rock {
+  background-color: #a38c21;
+}
+#demo-multiple-chip-label.water {
+  background-color: #179bef;
+}
+#demo-multiple-chip-label.ground {
+  background-color: #f7de3f;
+}
+#demo-multiple-chip-label.bug {
+  background-color: #729f3f;
+}
+#demo-multiple-chip-label.normal {
+  background-color: #a4acaf;
+}
+#demo-multiple-chip-label.fighting {
+  background-color: #d56723;
+}
+#demo-multiple-chip-label.ghost {
+  background-color: #7b62a3;
+}
+#demo-multiple-chip-label.steel {
+  background-color: #9eb7b8;
+}
+#demo-multiple-chip-label.fairy {
+  background-color: #fdb9e9;
+}
+#demo-multiple-chip-label.electric {
+  background-color: #e8db89;
+}
+#demo-multiple-chip-label.dragon {
+  background-color: #f16e57;
+}
+
+.MuiAutocomplete-root fieldset, .MuiOutlinedInput-root fieldset {
+  border-color: #ffffff !important;
+}
+
+.MuiAutocomplete-root label, .MuiAutocomplete-root input, .MuiAutocomplete-root {
+  color: #ffffff !important;
+}
+
+.MuiAutocomplete-clearIndicator {
+  color: #ffffff !important;
+}
+
+.MuiSelect-select .MuiOutlinedInput-root {
+  padding: 12px 14px;
+}
+
+.MuiInputBase-root svg {
+  color: #ffffff;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.6;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  display: flex;
+  align-items: center;
+}
+
+.modal {
+  z-index: 100;
+  background: #ffffff;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 500px;
+  padding: 3rem;
+  background-image: linear-gradient(to right, #abbaab 0%, #ffffff 51%, #abbaab 100%);
+}
+.modal p {
+  text-align: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0);
+  opacity: 0.3;
+  cursor: pointer;
+  border: none;
+}
+.modal-close-button span {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.review-name {
+  padding: 17px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.review-information {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.review-name.ice {
+  background-color: #7fcdff;
+}
+.review-name.grass {
+  background-color: #9bcc50;
+}
+.review-name.poison {
+  background-color: #b97fc9;
+}
+.review-name.fire {
+  background-color: #fd7d24;
+}
+.review-name.psychic {
+  background-color: #f366b9;
+}
+.review-name.flying {
+  background-color: #bdb9b8;
+}
+.review-name.rock {
+  background-color: #a38c21;
+}
+.review-name.water {
+  background-color: #179bef;
+}
+.review-name.ground {
+  background-color: #f7de3f;
+}
+.review-name.bug {
+  background-color: #729f3f;
+}
+.review-name.normal {
+  background-color: #a4acaf;
+}
+.review-name.fighting {
+  background-color: #d56723;
+}
+.review-name.ghost {
+  background-color: #7b62a3;
+}
+.review-name.steel {
+  background-color: #9eb7b8;
+}
+.review-name.fairy {
+  background-color: #fdb9e9;
+}
+.review-name.electric {
+  background-color: #e8db89;
+}
+.review-name.dragon {
+  background-color: #f16e57;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("/public/images/home/bg.png") no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 400px) {
+  body {
+    height: auto;
+    background-size: auto;
+  }
+}
+
+.body-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */

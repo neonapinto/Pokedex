@@ -1,0 +1,36 @@
+@import './_variables/color';
+@import './_variables//fonts';
+@import './mixins/mixins';
+@import './_modules/buttons';
+@import './_modules/splash_page';
+@import './_modules/home';
+@import './_modules/card';
+@import './_modules/user_form';
+@import './_modules/pokedex';
+@import './_modules/modal';
+@import './_modules/review';
+
+html, body, #root{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url('/public/images/home/bg.png') no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 400px) {
+        height: auto;
+        background-size: auto;
+    }
+}
+
+.body-container{
+    width: 100%;
+    background-color: $background;
+    height: 100%;
+}
+
