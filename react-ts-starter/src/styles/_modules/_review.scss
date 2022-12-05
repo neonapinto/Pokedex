@@ -1,0 +1,16 @@
+.review-name{
+    padding: 17px;
+    color: $text-color;
+    border: 1px solid $text-color;
+    width: fit-content;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.review-information{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.review-name {
+    @include color-range;
+}

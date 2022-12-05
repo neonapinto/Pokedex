@@ -1,0 +1,38 @@
+.splash-bg{
+    background: url(/public/images/splash/bg.png) no-repeat center center fixed;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.splash-btn{
+    background-color: $primary;
+    padding: 1rem 3rem;
+    color: $text-color;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a  51%, #cb2d3e  100%);
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 50px;
+    left: calc(50% - 104px);
+    outline: none;
+    animation: crescendo 0.7s alternate infinite ease-in;
+}
+
+  .splash-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  @keyframes crescendo {
+    0%   {transform: scale(.9);}
+    100% {transform: scale(1);}
+  }
+ 

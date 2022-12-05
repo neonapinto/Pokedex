@@ -1,0 +1,41 @@
+.pokedex-search-row{
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.pokedex-banner{
+    background-color: $text-color;
+    border: 1px solid $steel;
+    color: $steel;
+    font-size: 1.1rem;
+    font-style: italic;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.pokemon-sprite:hover{
+    transform: scale(1.05);
+}
+// mui dropdown css
+#demo-multiple-chip-label{
+    padding: 0 0.1rem;
+    color: $text-color;
+    @include color-range;    
+}
+.MuiAutocomplete-root fieldset,  .MuiOutlinedInput-root fieldset{
+    border-color: $text-color !important;
+ }
+ .MuiAutocomplete-root label, .MuiAutocomplete-root input, .MuiAutocomplete-root{
+    color: $text-color !important;
+ }
+ .MuiAutocomplete-clearIndicator{
+   color: $text-color !important;
+ }
+.MuiSelect-select .MuiOutlinedInput-root{
+    padding: 12px 14px;
+ }
+
+ .MuiInputBase-root svg{
+    color: $text-color;
+ }
